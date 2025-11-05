@@ -1,0 +1,149 @@
+/* Add your CSS here to style your halloween page */
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+
+body {
+    background-color: #010000;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 50px;
+    font-family: Jolly Lodger, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+li {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #ea6f15;
+}
+
+header {
+    background-color: rgb(159, 54, 136, 0.5);
+    text-align: center;
+}
+
+li {
+  transition: all 0.3s ease-in-out;
+}
+
+li:hover {
+  text-shadow: 0 0 10px #ff5900, 0 0 20px #ff5900;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+section {
+  background-color: rgba(199, 11, 11, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin: 30px auto;
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 100, 0, 0.3);
+  animation: flicker 3s infinite;
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+  20%, 24%, 55% { opacity: 0.6; }
+}
+
+footer::after {
+  bottom: 10px;
+  right: 10px;
+}
+
+.glow {
+  font-size: 80px;
+  color: #ff5900;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #e60073, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6;
+  }
+}
+
+h1 {
+    font-family: Jolly Lodger, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #ea6f15;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-family: Jolly Lodger, Helvetica, sans-serif;
+    font-size: 35px;
+    color: #ea6f15;
+}
+
+.jolly-lodger-regular {
+  font-family: "Jolly Lodger", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: "Georgia", serif;
+  color: #f5e6e8;
+  text-shadow: 0 0 5px #ff0000, 0 0 10px #660000;
+  line-height: 1.6;
+  transition: all 0.3s ease-in-out;
+}
+
+p:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff6600;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 40%;
+  left: -150px;
+  width: 100px;
+  height: 100px;
+  background: url("../images/better_ghost.png") no-repeat center/contain;
+  animation: ghostFly 15s linear infinite;
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+@keyframes ghostFly {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(30vw) translateY(-20px);
+  }
+  50% {
+    transform: translateX(60vw) translateY(10px);
+  }
+  75% {
+    transform: translateX(90vw) translateY(-30px);
+  }
+  100% {
+    transform: translateX(110vw) translateY(0);
+  }
+}
+
+

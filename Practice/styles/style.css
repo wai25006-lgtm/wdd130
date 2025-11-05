@@ -1,0 +1,13 @@
+body {
+    background-color: #AEC6CF;
+}
+
+img {
+    float: left;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+header {
+    background-color: blueviolet;
+}
